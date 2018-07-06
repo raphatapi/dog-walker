@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -41,6 +42,15 @@
             </span>
         </div>
     </nav>
+    <!-- Background Video -->
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="pics/Puppiness.jpg" class="fullscreen-bg__video">
+            <source src="pics/Puppiness.webm" type="video/webm">
+            <source src="pics/Puppiness.mp4" type="video/mp4">
+            <source src="pics/Puppiness.ogv" type="video/ogv">
+        </video>
+    </div>
+    <!-- Background Video -->
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -53,15 +63,19 @@
                     <img class="d-block w-100" src="./pics/happy-dog-wallpaper-3.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Welcome to my dog walking company!</h1>
-                        <hr class="my-4">
-                        <h4>Hi! My name is Anthony. My dad is helping me create a dog walking service. My dog, Henna, likes to take walks and that gave me this idea.</h4>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./pics/Walking_each_other.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Hi! My name is Anthony. My dad is helping me create a dog walking service.</h2>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./pics/dog_play.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>My dog, Henna, likes to take walks and that gave me this idea.</h2>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,10 +116,6 @@
             </div>
         </div>
     </div>
-
-<script type="text/javascript">
-    $('.carousel').carousel('cycle');
-</script>
 
 </body>
 </html>
