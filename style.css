@@ -24,20 +24,6 @@
         -ms-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 }
-
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('./pics/Puppiness.jpg') center center / cover no-repeat;
-    }
-
-    .fullscreen-bg__video {
-        display: none;
-    }
-
-    .carousel {
-        display: none;
-    }
-}
 /* Background Video*/
 
 .navbar {
@@ -64,7 +50,7 @@ li a {
 }
 
 .carousel-caption h1, h2 {
-    color: white;
+    color: #e3f2fd;
     font-weight: bolder;
     font-size: 350%;
     /* text-shadow: 2px 2px 8px gray; */
@@ -166,4 +152,27 @@ li a {
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
     background: #2EBC99;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-item {
+        height: 70vh !important;
+    }
+
+    .carousel-caption {
+        top: 10%;
+    }
+
+    .carousel-caption h1, h2 {
+        font-size: 250%;
+    }
+
+    /* .fullscreen-bg {
+        background: url('./pics/Puppiness.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    } */
 }
